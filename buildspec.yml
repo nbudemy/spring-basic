@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+    commands:
+      - echo "Starting build $(date)"
+  pre_build:
+    commands:
+      - mvn clean
+  build:
+    commands:
+      - mvn install
+  post_build:
+    commands:
+      - echo "Build completed $(date)"
+artifacts:
+  files:
+    - 'target/nbdemo.war'
