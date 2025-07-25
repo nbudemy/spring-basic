@@ -18,3 +18,5 @@ phases:
 artifacts:
   files:
     - 'target/nbdemo.war'
+    - 'scripts/*'
+    - 'appspec.yml'
