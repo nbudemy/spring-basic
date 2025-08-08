@@ -10,7 +10,7 @@ public class NbdemoApplication {
 
 	@GetMapping("/hello")
 	public String sayHello() {
-		return "Hi from cdemo - v1";
+		return "Hi from cdemo - v2";
 	}
 
 	public static void main(String[] args) {
